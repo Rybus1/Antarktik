@@ -1,0 +1,26 @@
+// Vendor
+@import "./vendor/normalize.scss";
+
+// Global
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./global/fonts.scss";
+@import "./global/reboot.scss";
+@import "./global/utils.scss";
+
+// Blocks
+@import "./blocks/container.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main.scss";
+@import "./blocks/header.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/navigation-menu.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/trips.scss";
+@import "./blocks/booking.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";

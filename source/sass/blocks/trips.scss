@@ -1,0 +1,179 @@
+.trips {
+  padding: 62px 0 120px;
+
+  @media (max-width: $vp-1023) {
+    padding: 91px 0 100px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 58px 0 65px;
+  }
+}
+
+.trips__container {
+  padding: 0 35px;
+
+  @media (max-width: $vp-1023) {
+    padding: 0 60px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 25px;
+  }
+}
+
+.trips__title {
+  margin-bottom: 49px;
+  text-align: center;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 51px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 31px;
+  }
+}
+
+.trips__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+
+  @media (max-width: $vp-1023) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.trips__item {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.trips__img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.trips__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  @media (max-width: $vp-1023) {
+    aspect-ratio: 309/386;
+  }
+
+  @media (max-width: $vp-767) {
+    aspect-ratio: 270/386;
+  }
+}
+
+.trips__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 25px 35px;
+  color: #d8d8d9;
+  background-color: #011c40;
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+  opacity: 0;
+
+  @media (max-width: $vp-1023) {
+    padding: 30px 35px 34px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 30px 25px 34px;
+  }
+}
+
+.trips__img-title {
+  position: absolute;
+  bottom: 23px;
+  left: 30px;
+  z-index: 2;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f9fbfd;
+
+  @media (max-width: $vp-1023) {
+    bottom: 27px;
+    left: 35px;
+  }
+
+  @media (max-width: $vp-767) {
+    bottom: 17px;
+    left: 25px;
+  }
+}
+
+.trips__content-title {
+  margin: 0;
+}
+
+.trips__description {
+  height: 316px;
+  margin-top: 13px;
+  margin-bottom: 5px;
+  overflow: auto;
+  font-size: 14px;
+  line-height: 20px;
+  scrollbar-color: #ffffff #808080;
+  scrollbar-width: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.trips__description-title {
+  margin: 0;
+  font-weight: 500;
+  color: #f9fbfd;
+}
+
+.trips__description-text {
+  margin: 0 0 12px;
+
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+.trips__button {
+  margin-top: auto;
+}
+
+.trips__item:hover .trips__content,
+.trips__item:focus-within .trips__content {
+  z-index: 3;
+
+  opacity: 1;
+}
+
+.trips__item:hover .trips__img,
+.trips__item:focus-within .trips__img {
+  z-index: -1;
+
+  opacity: 0;
+}
+
+// .trips__item:hover h3,
+// .trips__item:focus-within h3 {
+//   position: static;
+// }

@@ -1,0 +1,32 @@
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-align: center;
+  color: #011c40;
+  text-decoration: none;
+  background-color: #f9fbfd;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #aad4fa;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+  }
+}

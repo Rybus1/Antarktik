@@ -1,0 +1,14 @@
+.header {
+  position: absolute;
+  top: 0;
+  color: #f9fbfd;
+  background-color: transparent;
+  width: 100%;
+}
+
+// TO DO
+.header--open .header__promo {
+  @media (max-width: $vp-767) {
+    padding-left: 30px;
+  }
+}
