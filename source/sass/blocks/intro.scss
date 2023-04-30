@@ -17,13 +17,16 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 80px;
+  padding: 0 12px 0 28px;
 
   @media (max-width: $vp-1023) {
     gap: 30px;
+    padding: 0 40px 0 45px;
   }
 
   @media (max-width: $vp-767) {
     display: block;
+    padding: 0 15px;
   }
 }
 
@@ -36,6 +39,14 @@
 
   @media (max-width: $vp-767) {
     margin-bottom: 42px;
+  }
+}
+
+.intro__content p {
+  line-height: 24px;
+
+  @media (max-width: $vp-1023) {
+    font-size: 16px;
   }
 }
 

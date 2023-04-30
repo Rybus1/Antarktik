@@ -8,7 +8,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding-top: 40px;
+    padding-top: 59px;
     padding-bottom: 65px;
   }
 }
@@ -90,6 +90,7 @@
   font-size: 16px;
   line-height: 24px;
 
+
   @media (max-width: $vp-1023) {
     padding-top: 67px;
     padding-bottom: 66px;
@@ -107,9 +108,11 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  margin-left: 10px;
 
   @media (max-width: $vp-1023) {
     margin-bottom: 27px;
+    margin-left: 0px;
   }
 }
 
@@ -121,6 +124,12 @@
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: 0 center;
+  margin-left: 8px;
+
+  @media (max-width: $vp-1023) {
+    margin-left: 0;
+    background-position: 0 4px;
+  }
 
   &:hover,
   &:focus {
@@ -135,10 +144,13 @@
   &:active {
     opacity: 0.5;
   }
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__link--address {
-  margin-bottom: 20px;
   background-image: url("../img/svg/icon-marker.svg");
 }
 

@@ -25,6 +25,7 @@
 .trips h2 {
   margin-bottom: 49px;
   text-align: center;
+  margin-left: 16px;
 
   @media (max-width: $vp-1023) {
     margin-bottom: 51px;
@@ -32,6 +33,7 @@
 
   @media (max-width: $vp-767) {
     margin-bottom: 31px;
+    margin-left: 0;
   }
 }
 
@@ -39,9 +41,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
+  margin: 0 -8px 0 8px;
 
   @media (max-width: $vp-1023) {
     grid-template-columns: 1fr 1fr;
+    margin: 0;
   }
 
   @media (max-width: $vp-767) {

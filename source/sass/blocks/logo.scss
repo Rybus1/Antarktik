@@ -30,6 +30,9 @@
   display: block;
   width: 100%;
   height: 100%;
-
   fill: currentColor;
+
+  @media (max-width: $vp-767) {
+    width: auto;
+  }
 }

@@ -5,7 +5,7 @@
 .footer__container {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  gap: 40px;
+  gap: 38px;
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -13,20 +13,28 @@
   @media (max-width: $vp-1023) {
     gap: 25px;
     padding-top: 50px;
+    padding-left: 35px;
+    padding-right: 54px;
   }
 
   @media (max-width: $vp-767) {
     grid-template-columns: 1fr;
-    padding-top: 42px;
+    padding-top: 45px;
     padding-bottom: 42px;
+    padding-left: 15px;
   }
 }
 
 .footer__logo {
   align-self: baseline;
+  margin-left: 10px;
+
+  @media (max-width: $vp-767) {
+    margin: 0;
+  }
 }
 
-.footer .nav-menu__item {
+.footer .navigation-menu__item {
   margin-right: 34px;
   margin-left: 0;
 
@@ -45,7 +53,7 @@
   }
 }
 
-.footer .nav-menu__link {
+.footer .navigation-menu__link {
   @media (max-width: $vp-1023) {
     font-size: 12px;
     line-height: 15px;

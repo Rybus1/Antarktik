@@ -226,8 +226,8 @@
               <div class="trips__img">
                 <picture>
                   <source type="image/webp"
-                    srcset="img/trips/trips-6-desktop.webp 1x, img/trips/trips-6-desktop@2x.webp 2x">
-                  <img src="img/trips/trips-6-desktop.jpg" srcset="img/trips/trips-6-desktop@2x.jpg 2x" alt="Круиз Леонор"
+                    srcset="img/trips/trips-5-desktop.webp 1x, img/trips/trips-5-desktop@2x.webp 2x">
+                  <img src="img/trips/trips-5-desktop.jpg" srcset="img/trips/trips-5-desktop@2x.jpg 2x" alt="Круиз Леонор"
                     width="260" height="386">
                 </picture>
                 <h3>Круиз "Аврора"</h3>
@@ -251,8 +251,8 @@
               <div class="trips__img">
                 <picture>
                   <source type="image/webp"
-                    srcset="img/trips/trips-5-desktop.webp 1x, img/trips/trips-5-desktop@2x.webp 2x">
-                  <img src="img/trips/trips-5-desktop.jpg" srcset="img/trips/trips-5-desktop@2x.jpg 2x" alt="Круиз Аврора"
+                    srcset="img/trips/trips-6-desktop.webp 1x, img/trips/trips-6-desktop@2x.webp 2x">
+                  <img src="img/trips/trips-6-desktop.jpg" srcset="img/trips/trips-6-desktop@2x.jpg 2x" alt="Круиз Аврора"
                     width="260" height="386">
                 </picture>
                 <h3>Круиз "Леонор"</h3>
@@ -313,11 +313,11 @@
             <form action="https://echo.htmlacademu.ru" method="post">
               <div class="booking__input-container">
                 <input type="text" name="form-name" id="form-name" placeholder="Имя" aria-label="Name" required>
-                <input type="tel" name="form-tel" id="form-tel" placeholder="Телефон" aria-label="Phone" required>
+                <input type="tel" name="form-tel" id="form-tel" placeholder="Телефон" aria-label="Phone" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
                 <input type="email" name="form-mail" id="form-mail" placeholder="Email" aria-label="Email" required>
               </div>
               <div class="booking__checkbox-container">
-                <input type="checkbox" name="form-check" id="form-check" checked>
+                <input type="checkbox" name="form-check" id="form-check" checked required>
                 <label for="form-check">Я согласен на обработку моих&nbsp;персональных данных</label>
               </div>
               <button class="booking__form-submit button" type="submit">Оставить заявку</button>

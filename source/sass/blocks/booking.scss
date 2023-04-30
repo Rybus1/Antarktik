@@ -22,7 +22,7 @@
 .booking__container {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 65px;
+  gap: 74px;
   align-items: center;
 
   @media (max-width: $vp-1023) {
@@ -31,10 +31,10 @@
 }
 
 .booking__content {
-  padding: 0 20px 40px 60px;
+  padding: 0 20px 40px 68px;
 
   @media (max-width: $vp-1023) {
-    padding: 40px 40px 52px;
+    padding: 40px 40px 50px;
     text-align: center;
   }
 

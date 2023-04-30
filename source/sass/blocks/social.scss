@@ -2,7 +2,8 @@
   display: grid;
   gap: 25px;
   grid-template-columns: auto auto auto;
-  align-self: baseline;
+  align-self: center;
+  margin-right: -8px;
 
   @media (max-width: $vp-1023) {
     gap: 22px;

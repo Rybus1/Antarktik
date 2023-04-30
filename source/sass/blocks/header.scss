@@ -5,3 +5,11 @@
   background-color: transparent;
   width: 100%;
 }
+
+.header__container {
+  padding: 0 12px 0 28px;
+
+  @media (max-width: $vp-1023) {
+    padding: 0 45px;
+  }
+}
